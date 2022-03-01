@@ -4,64 +4,18 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: GridView.extent(
-        primary: false,
-        padding: const EdgeInsets.all(16),
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        maxCrossAxisExtent: 200.0,
-        children: <Widget>[
-          Card(
-            child: FittedBox(
-              child: Image(
-                image: AssetImage('images/flower.jpg'),
-              ),
-              fit: BoxFit.fill,
-            ),
+      appBar: AppBar(
+        title: Text("Navbar"),
+        backgroundColor: Colors.deepPurpleAccent,
+      ),
+      body: Container(
+        child: Center(
+          child: Text(
+            "Second Screen",
+            style: TextStyle(fontSize: 20),
           ),
-          Card(
-            child: FittedBox(
-              child: Image(
-                image: AssetImage('images/flower.jpg'),
-              ),
-              fit: BoxFit.fill,
-            ),
-          ),
-          Card(
-            child: FittedBox(
-              child: Image(
-                image: AssetImage('images/flower.jpg'),
-              ),
-              fit: BoxFit.fill,
-            ),
-          ),
-          Card(
-            child: FittedBox(
-              child: Image(
-                image: AssetImage('images/flower.jpg'),
-              ),
-              fit: BoxFit.fill,
-            ),
-          ),
-          Card(
-            child: FittedBox(
-              child: Image(
-                image: AssetImage('images/flower.jpg'),
-              ),
-              fit: BoxFit.fill,
-            ),
-          ),
-          Card(
-            child: FittedBox(
-              child: Image(
-                image: AssetImage('images/flower.jpg'),
-              ),
-              fit: BoxFit.fill,
-            ),
-          ),
-        ],
-      )),
+        ),
+      ),
     );
   }
 }

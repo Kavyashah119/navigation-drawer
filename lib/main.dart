@@ -30,7 +30,7 @@ class _State extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("NavBar"),
+        title: Text("Navbar"),
         backgroundColor: Colors.deepPurpleAccent,
       ),
       body: PageView(
@@ -79,8 +79,8 @@ class _State extends State<MyHomePage> {
           padding: EdgeInsets.zero,
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text("Khushi"),
-              accountEmail: Text("khushi@gmail.com"),
+              accountName: Text("Kavya"),
+              accountEmail: Text("kavyashah@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.red,
                 child: Text(
@@ -101,15 +101,15 @@ class _State extends State<MyHomePage> {
             ),
             ListTile(
               leading: Icon(Icons.list),
-              title: Text("List View"),
+              title: Text("Review"),
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => FirstScreen()));
               },
             ),
             ListTile(
-              leading: Icon(Icons.image),
-              title: Text("Grid View"),
+              leading: Icon(Icons.settings),
+              title: Text("Settings"),
               onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => SecondScreen()));
